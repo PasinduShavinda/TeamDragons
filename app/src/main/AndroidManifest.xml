@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TeamDragons">
         <activity
+            android:name=".orderList"
+            android:exported="true" />
+        <activity
+            android:name=".orderEdit"
+            android:exported="true" />
+        <activity
+            android:name=".orderActivityFirst"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
