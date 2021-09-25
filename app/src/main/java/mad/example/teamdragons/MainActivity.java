@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btnOrder;
+    private Button btnOrder, btn_product;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         btnOrder = (Button) findViewById(R.id.btn_orderHome);
+        btn_product = (Button) findViewById(R.id.btn_product);
+
 
         btnOrder.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,9 +27,16 @@ public class MainActivity extends AppCompatActivity {
                 openSecond();
             }
         });
+        btn_product.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               startActivity(new Intent(MainActivity.this, ProductManagementHome.class));
+
+            }
+        });
     }
 
-    // navigation
+    // navigationst
 
     public void openSecond(){
 

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorsss"
+    tools:context=".Product_Calculator">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="249dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="132dp"
+        android:text="Product Calculator"
+        android:textAlignment="center"
+        android:textColor="@color/cast_expanded_controller_background_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/calc_Pname"
+        android:layout_width="238dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="@string/productname"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/calc_Quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/quantity"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calc_Pname" />
+
+    <EditText
+        android:id="@+id/calc_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/price"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calc_Quantity" />
+
+    <TextView
+        android:id="@+id/calc_Answer"
+        android:layout_width="232dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="124dp"
+        android:hint="@string/total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calc_Price" />
+
+    <Button
+        android:id="@+id/calc_button"
+        android:layout_width="111dp"
+        android:layout_height="59dp"
+        android:text="Calculate"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calc_clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calc_clear"
+        android:layout_width="124dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="80dp"
+        android:text="Clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calc_Price" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="98dp"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/calculator"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="68dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

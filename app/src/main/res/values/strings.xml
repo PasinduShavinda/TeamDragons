@@ -37,4 +37,9 @@
     <string name="tv_dateEdit">Date</string>
     <string name="tv_orderListTopicCus">Orders</string>
     <string name="btn_viewOF">View</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="productname">Product Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="total">Total Price</string>
 </resources>
