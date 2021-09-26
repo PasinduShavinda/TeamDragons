@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">TeamDragons</string>
+    <string name="payinsert">Payment Insert</string>
+    <string name="cardnumber">Card Number</string>
+    <string name="cashholder">Cash Holder Name</string>
+    <string name="expired">Expire Date</string>
+    <string name="cvc">CVC</string>
+    <string name="proceed">PROCEED</string>
+    <string name="payment_update">Update Payment</string>
+    <string name="updatepayment">UPDATE</string>
+    <string name="deletepayment">DELETE</string>
+    <string name="retrivepay">Payment Details</string>
+    <string name="updatepay">UPDATE</string>
+    <string name="searchpay">Enter Customer Name</string>
+    <string name="search">SEARCH</string>
+    <string name="paynow">PAY NOW</string>
+    <string name="updatepaymentdetails">UPDATE PAYMENT DETAILS</string>
+    <string name="displaypay">PAYMENT DETAILS</string>
+    <string name="serchpayment">Enter Cashholder Name</string>
+    <string name="seepayments">View Payment Details</string>
+    <string name="viewpay">View</string>
+    <string name="viewpaydetails">View Payment Details</string>
+    <string name="refunded">refunded</string>
+    <string name="productPrice">Model Code</string>
+    <string name="productprice">Product Price</string>
+    <string name="qty">Quantity</string>
+    <string name="totalProductCost">Total Product Cost</string>
+    <string name="sellproductprice">Price Of Selling</string>
+    <string name="Quantityofdayselling">Quantity Of Day Selling</string>
+    <string name="sum">Sum of the Product</string>
+    <string name="discountofsell">Discount Sell</string>
+    <string name="totalsell">Total Selling one day</string>
+    <string name="paymentca">Payment Calculator</string>
+    <string name="clear">Clear</string>
+    <string name="calculatepay">Calculate</string>
 </resources>

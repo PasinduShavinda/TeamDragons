@@ -10,14 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TeamDragons">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".RefundedSucess"
+            android:exported="true" />
+        <activity
+            android:name=".CalPay"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentSuccess"
+            android:exported="true" />
+        <activity
+            android:name=".PayDetailsAdmin"
+            android:exported="true" />
+        <activity
+            android:name=".DisplayPaymentDetails"
+            android:exported="true" />
+        <activity
+            android:name=".UpdatePayment"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentInsert"
+            android:exported="true" />
     </application>
 
 </manifest>
