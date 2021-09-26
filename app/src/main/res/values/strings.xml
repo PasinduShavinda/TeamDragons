@@ -41,4 +41,11 @@
     <string name="manageFeedback">Feedback Management</string>
     <string name="btn_adminview">View Feedbacks</string>
     <string name="btn_adminCal">Feedback Calculator</string>
+    <string name="btn_userProfile">User Profile</string>
+    <string name="btn_adminOrder">Admin Order</string>
+    <string name="btnOrdCalMain">Order Calculation</string>
+    <string name="btn_product">Product</string>
+    <string name="orderHome">Order Home</string>
+    <string name="btn_feedback">Feedback</string>
+    <string name="btn_payment">Payment</string>
 </resources>
