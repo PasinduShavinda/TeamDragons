@@ -129,14 +129,15 @@
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="100dp"
-                android:layout_height="48dp"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#460451"
+                android:background="@drawable/rounded_button"
                 android:isScrollContainer="true"
                 android:text="Place Your Order"
                 android:textColor="@color/white"
-                android:textSize="10sp" />
+                android:textSize="10sp"
+                app:backgroundTint="#54A5E6" />
         </LinearLayout>
 
     </LinearLayout>

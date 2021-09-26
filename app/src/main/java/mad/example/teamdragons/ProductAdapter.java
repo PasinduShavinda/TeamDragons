@@ -24,17 +24,14 @@ public class ProductAdapter extends BaseAdapter {
         this.layout = layout;
         this.productList = productList;
     }
-
     @Override
     public int getCount() {
         return productList.size();
     }
-
     @Override
     public Object getItem(int i) {
         return productList.get(i);
     }
-
     @Override
     public long getItemId(int i) {
         return i;
@@ -44,7 +41,6 @@ public class ProductAdapter extends BaseAdapter {
         TextView txtName, txtDes, txtPrice, txtId;
         ImageView imgIcon;
     }
-
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         View row = view;

@@ -10,25 +10,73 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:background="#A47FE6"
-        android:text="Mr . Gifts Store"
+        android:layout_height="77dp"
+        android:background="#041263"
+        android:text="｡❈  🎀  𝑀𝓇. 𝒢𝒾𝒻𝓉𝓈  🎀  ❈｡"
         android:textAlignment="center"
-        android:textColor="#2E174A"
-        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textSize="34sp"
         android:textStyle="bold" />
 
 
     <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
         android:id="@+id/textView8"
         android:layout_width="match_parent"
-        android:layout_height="45dp" />
+        android:layout_height="48dp"
+        android:background="#041263"
+        android:text="Let's Start Your Order!!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
 
     <ListView
+        android:id="@+id/productlist"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/productlist"
-        android:layout_weight="1"/>
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </ListView>
 
 
 </LinearLayout>

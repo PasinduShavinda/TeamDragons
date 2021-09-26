@@ -28,7 +28,7 @@ public class SplashScreen extends AppCompatActivity {
         {
             try{
 
-                sleep(1000 * SLEEP_TIMER);
+                sleep(2000 * SLEEP_TIMER);
 
             }
             catch(InterruptedException e)

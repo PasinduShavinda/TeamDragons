@@ -8,85 +8,28 @@
     tools:context=".SplashScreen">
 
     <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImageView5"
-        android:layout_width="79dp"
-        android:layout_height="110dp"
-        android:layout_marginEnd="324dp"
-        android:layout_marginBottom="536dp"
-        android:src="@drawable/balloon"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImageView6"
-        android:layout_width="79dp"
-        android:layout_height="110dp"
-        android:layout_marginEnd="236dp"
-        android:layout_marginBottom="288dp"
-        android:src="@drawable/balloon"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="260dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="60dp"
-        android:text="Gift Store"
-        android:textAlignment="center"
-        android:textColor="@color/design_default_color_error"
-        android:textSize="45sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gifImageView"
-        android:layout_width="368dp"
-        android:layout_height="567dp"
-        android:src="@drawable/shopping"
+        android:layout_width="359dp"
+        android:layout_height="495dp"
+        android:src="@drawable/giftbox"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.725" />
-
-    <pl.droidsonroids.gif.GifImageView
-        android:layout_width="79dp"
-        android:layout_height="110dp"
-        android:layout_marginBottom="168dp"
-        android:src="@drawable/balloon"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.894"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="411dp"
-        android:layout_height="111dp"
-        android:layout_marginBottom="68dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/cool" />
+        app:layout_constraintVertical_bias="0.593" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="62dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="24dp"
-        android:text="Mr."
+        android:layout_width="376dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="48dp"
+        android:text="｡❈  🎀  𝑀𝓇. 𝒢𝒾𝒻𝓉𝓈  🎀  ❈｡"
         android:textAlignment="center"
         android:textColor="@color/design_default_color_error"
         android:textSize="34sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.257"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class ProductManagementHome extends AppCompatActivity {
 
-    Button add, view;
+    Button add, view, button4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class ProductManagementHome extends AppCompatActivity {
 
         add = findViewById(R.id.btn_Home_Add);
         view = findViewById(R.id.btn_Home_View);
+        button4 = findViewById(R.id.button4);
 
 
 
@@ -32,6 +33,13 @@ public class ProductManagementHome extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(ProductManagementHome.this, ViewProducts.class));
+            }
+        });
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProductManagementHome.this, Product_Calculator.class));
             }
         });
     }

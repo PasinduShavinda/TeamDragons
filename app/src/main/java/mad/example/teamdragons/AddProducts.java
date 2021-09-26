@@ -31,7 +31,6 @@ public class AddProducts extends AppCompatActivity {
     FloatingActionButton fab;
     Uri pathImage;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +38,6 @@ public class AddProducts extends AppCompatActivity {
 
         cover = findViewById(R.id.cover);
         fab = findViewById(R.id.fab);
-
         product = findViewById(R.id.edt_txt_PName);
         description = findViewById(R.id.edt_txt_Description);
         price = findViewById(R.id.edt_txt_Price);
@@ -55,25 +53,13 @@ public class AddProducts extends AppCompatActivity {
                         .compress(1024)			//Final image size will be less than 1 MB(Optional)
                         .maxResultSize(1080, 1080)	//Final image resolution will be less than 1080 x 1080(Optional)
                         .start();
-
             }
         });
-
-
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-
-
                 DBHandlerProduct dbHandlerProduct = new DBHandlerProduct(getApplicationContext());
-//                String filePath = pathImage.toString();
-//                Bitmap bitmap = BitmapFactory.decodeFile(filePath);
-//                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-//                bitmap.compress(Bitmap.CompressFormat.PNG, 0, byteArrayOutputStream);
-//                byte[] bytesImage = byteArrayOutputStream.toByteArray();
-//                ContentValues contentValues = new ContentValues();
-//                contentValues.put("Image", bytesImage);
                 BitmapDrawable drawable = (BitmapDrawable) cover.getDrawable();
                 Bitmap bitmap = drawable.getBitmap();
                 ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
@@ -82,7 +68,6 @@ public class AddProducts extends AppCompatActivity {
               long newID = dbHandlerProduct.addInfo(bytesImage, product.getText().toString(), description.getText().toString(), price.getText().toString());
 
                 Toast.makeText(AddProducts.this, "Product is added. Product ID" +newID, Toast.LENGTH_SHORT).show();
-
               Intent i = new Intent(getApplicationContext(),EditProducts.class);
               startActivity(i);
 
@@ -90,7 +75,6 @@ public class AddProducts extends AppCompatActivity {
                 description.setText(null);
                 price.setText(null);
                 //cover.setImageURI();
-
             }
         });
 
@@ -100,10 +84,8 @@ public class AddProducts extends AppCompatActivity {
 
                 Intent newintent = new Intent(getApplicationContext(),ViewProducts.class);
                 startActivity(newintent);
-
             }
         });
-
     }
 
     @Override
