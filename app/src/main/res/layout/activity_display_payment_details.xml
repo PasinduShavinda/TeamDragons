@@ -10,7 +10,7 @@
         android:id="@+id/textView3"
         android:layout_width="402dp"
         android:layout_height="58dp"
-        android:hint="@string/displaypay"
+        android:hint="@string/displayp"
         android:textAlignment="center"
         android:textColor="#181717"
         android:textColorHint="#141313"
