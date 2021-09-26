@@ -88,4 +88,9 @@
     <string name="btn_OrderEmail_HOME">Order Email</string>
     <string name="btn_orderAdmin">Go..</string>
     <string name="btn_adminOrder">Order Admin</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="productname">Product Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="total">Total Price</string>
 </resources>
