@@ -45,13 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 openOrderCal();
             }        });
 
-        btnOrderAdmin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openOrderAdmin();
-                openSecond();
-            }
-        });
+
         btn_product.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
