@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btnOrder;
+    private Button btnOrder, btnUser, btnOrderCal, btnOrderAdmin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,22 +17,76 @@ public class MainActivity extends AppCompatActivity {
 
 
         btnOrder = (Button) findViewById(R.id.btn_orderHome);
+        btnUser = (Button) findViewById(R.id.btn_userProfile);
+        btnOrderCal = (Button) findViewById(R.id.btnOrdCalMain);
+        btnOrderAdmin = (Button) findViewById(R.id.btn_adminOrder);
 
         btnOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openSecond();
+                openOrderHome();
             }
         });
+
+        btnUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openUserProfile();
+            }
+        });
+
+        btnOrderCal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openOrderCal();
+            }        });
+
+        btnOrderAdmin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openOrderAdmin();
+            }
+
+
+        });
+
+
     }
 
     // navigation
 
-    public void openSecond(){
+    public void openOrderHome(){
 
         Intent intent = new Intent(this, orderActivityFirst.class);
 
         startActivity(intent);
 
     }
+
+    public void openUserProfile(){
+
+        Intent intent = new Intent(this, createUserProfile.class);
+
+        startActivity(intent);
+
+    }
+
+    public void openOrderCal(){
+
+        Intent intent = new Intent(this, OrderCalculation.class);
+
+        startActivity(intent);
+
+    }
+
+    public void openOrderAdmin(){
+
+        Intent intent = new Intent(this, AdminOrderHome.class);
+
+        startActivity(intent);
+
+    }
+
+
+
 }

@@ -166,15 +166,44 @@ public class DBHandler extends SQLiteOpenHelper {
 
         ArrayList customers = new ArrayList<>();
         while(cursor.moveToNext()) {
-            String order = cursor.getString(
-            cursor.getColumnIndexOrThrow(orderManage.orders.COLUMN_NAME_CUSTOMER_NAME));
-            customers.add(order);
+            String name = cursor.getString(
+            cursor.getColumnIndexOrThrow(orderManage.orders.COLUMN_NAME_CUSTOMER_NAME)
+            );
+            String contact = cursor.getString(
+                    cursor.getColumnIndexOrThrow(orderManage.orders.COLUMN_NAME_CONTACT)
+            );
+            String address = cursor.getString(
+                    cursor.getColumnIndexOrThrow(orderManage.orders.COLUMN_NAME_ADDRESS)
+            );
+            String postal = cursor.getString(
+                    cursor.getColumnIndexOrThrow(orderManage.orders.COLUMN_NAME_POSTAL)
+            );
+            String wrap = cursor.getString(
+                    cursor.getColumnIndexOrThrow(orderManage.orders.COLUMN_NAME_WRAP)
+            );
+            String payment = cursor.getString(
+                    cursor.getColumnIndexOrThrow(orderManage.orders.COLUMN_NAME_PAYMENT)
+            );
+            String date = cursor.getString(
+                    cursor.getColumnIndexOrThrow(orderManage.orders.COLUMN_NAME_DATE)
+            );
+
+
+
+            customers.add(name);
+            customers.add(contact);
+            customers.add(address);
+            customers.add(postal);
+            customers.add(wrap);
+            customers.add(payment);
+            customers.add(date);
         }
 
         cursor.close();
         return customers;
 
     }
+
 
     public List readAllData(String customer){
 
